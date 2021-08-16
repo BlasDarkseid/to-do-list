@@ -1,4 +1,171 @@
-.body {
-    background-color: black;
-    color: aliceblue;
+:root { 
+--azul: #233E8B;
+--verde: #1EAE98;
+--verdeclaro: #A9F1DF;
+--amarilloCrema: #FFFFC7;
+--morado: #8E44AD;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body { 
+    background-image: url(./img/fondo7.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px; /*1 rem= 10px */  
+    font-family: 'Baloo Tammudu 2'; 
+  }
+
+  header { 
+    padding: 2rem;
+    text-align:center;
+    border-radius: 1.5rem;
+  }
+
+   h1 { 
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.2rem;
+    margin: 0;
+    border-radius: 1rem;
+    color: white;
+     }
+
+   h2 { 
+     color: white;
+   text-align: center;
+   font-size: 2.5rem;
+   padding: 1rem;
+   margin: 0;
+    }
+    h3 {
+      color:white;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin: 15rem;
+    }
+
+    input {
+      margin: 20px;
+      border: none;
+      border-radius: 1.5rem;
+      padding: 1.2em 2.8em;
+      width: 50%;
+      font-family: 'Baloo Tammudu 2';
+    }
+    
+    .boton {
+      box-sizing: border-box;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background-color: transparent;
+      border: 2px solid #e74c3c;
+      border-radius: 1.5rem;
+      color: #e74c3c;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1;
+      margin: 20px;
+      padding: 1.2em 2.8em;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Baloo Tammudu 2';
+      font-weight: 700;
+    }
+    .boton:hover, .boton:focus {
+      color: #fff;
+      outline: 0;
+    }
+    .efecto {
+      border-color: var(--morado);
+      color: #fff;
+      box-shadow: 0 0 40px 40px var(--morado) inset, 0 0 0 0 #b015f8;
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+    }
+    .efecto:hover {
+      box-shadow: 0 0 10px 0 #b314fd inset, 0 0 10px 4px #8c11a5;
+    }
+  .caja {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .lista {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+  }
+  
+  .lista h2 { 
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  ol{ 
+    padding: 0;
+    margin: 0;
+  }
+
+ ol li {
+   list-style-type: none;
+   padding: 12px 8px 12px 40px;
+   margin: 0;
+   border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   transition: 0.2s;
+   background: white;
+   border-radius: 0.2rem;
+
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+ol li:hover {
+  background: #ddd;
+}
+
+
+/* Estilo para botón de Cierre*/
+
+.btn-cierre {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+
+.btn-cierre:hover {
+  cursor: pointer;
+  background-color: rgb(42, 231, 24);
 }
